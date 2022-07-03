@@ -7,7 +7,6 @@ let TitleIc = document.querySelector('.TitleIc')
 
 
 function dropdown () {
-
     arrowClick.addEventListener('click' , (e)=>{
         drop.style.display = 'block'
         ArrowDown.style.display = 'none'
@@ -26,7 +25,6 @@ function dropdownClose () {
 
 function dropdownSearch () {
     TitleIc.addEventListener('click' , (e)=>{
-       
         searchContainer.style.display = 'block'
     })
 }

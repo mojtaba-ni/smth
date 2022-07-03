@@ -660,12 +660,16 @@ p{
     pointer-events: none;
     padding-top: 1rem;
 }
-.cardLi{
+.cardLi {
     border: 1px solid #ccc;
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
     z-index: 0 !important;
+    width: 100%  !important;
+}
+.height{
+    height: 420px;
 }
 .cardLi img:hover{
    opacity: .8;
@@ -817,7 +821,7 @@ p{
     width: 100%;
     height: 420px;
   }
-
+  
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -836,7 +840,9 @@ p{
     -webkit-align-items: center;
     align-items: center;
   }
-
+  .swiper-slide{
+    width: 100%;
+  }
   .swiper-slide img {
     display: block;
     width: 100%;
@@ -862,14 +868,15 @@ p{
     justify-content: center;
     padding: .2rem 0;
   }
-/* Posts style */
-  .breadCrumb{
+ /* Posts style */
+ .breadCrumb{
     display: flex;
     align-items: center;
     padding-bottom: .3rem;
+    width: 100%;
   }
   .postCard{
-    padding: 1rem 3rem;
+    padding: 1rem 4rem;
   }
   nav{ 
     display: flex;  
@@ -888,7 +895,7 @@ p{
   }
   .breadLi a{
     color: #868686;
-    font-size: .9rem;
+    font-size: 1rem;
   }
   .breadLi::after{
     content: '>';
@@ -899,22 +906,26 @@ p{
   }
   .breadLiActive p{
     color: #000;
-    font-size: .9rem;
+    font-size: 1rem;
   }
   .seprateLine{
     height: 1px;
     background-color: #e1e0e0; 
   }
-  .postCardTitle{
+  .seprateLinePurple{
+    height: 2px;
+    background-color: #6c0dd8;
+  }
+  .postCardTitle , .postCardTitle2 {
     justify-content: space-between;
     align-items: center;
   }
-  .postCardTitle p{
+  .postCardTitle p , .postCardTitle2 p {
     font-size: 1.1rem;
     letter-spacing: .5px;
     color: #6d6b6b;
   }
-  .postCardFeedback{
+  .postCardFeedback , .postCardFeedbacktTitle{
     display: flex;
     padding-left: 1rem;
   }
@@ -933,7 +944,200 @@ p{
     justify-content: space-between;
     align-items: center;
   }
-@media only screen and (min-width: 640px) {
+  .sliderLi{
+    width: 100% !important;
+  }
+  .sliderPost img{
+    width: 100%;
+    display: block !important;
+    height: auto;
+  }
+  .sliderPost{
+    height: 100%
+  }
+  .postCardBodyImg img{
+   width: 100%;
+   height: 620px;
+   display: block;
+  }
+  .postCardDesc{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .postCardDesc p{
+    line-height: 2rem;
+  }
+  .iconsContainer{
+    display: flex;
+    align-items: center;
+    direction: ltr;
+    padding: 1.4rem 0;
+  }
+  .iconsWrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 1.4rem;
+  }
+  .iconLi i, .feedbackCont i ,.feedbackCont p {
+    color: #c3c1c1;
+    font-size: 1.5rem;
+  }
+  .feedbackCont i{
+    cursor: pointer;
+  }
+  .iconLi i:hover,.feedbackCont i:hover , .FeedbackLi i:hover{
+    color:#7A08FA
+  }
+  .feedbackCont p {
+    color: #c3c1c1;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .feedbackCont{
+    border-left: 2px solid #c3c1c1;
+    display: flex;
+    align-items: center;
+  }
+  .highLight{
+    display: flex;
+    align-items: center;
+    padding: 2.2rem .5rem;
+  }
+  .highLightBox{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding-right: 1rem;
+  }
+  .highLightLi{
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    padding: .3rem .5rem;
+    cursor: pointer;
+    }
+    .highLightLi:hover{
+        cursor: pointer;
+        transition: 0.1s ease-in-out;
+        transform: scale(1.04);
+    }
+    .commentsContainer{
+        padding: 1.1rem .6rem;
+    }
+    .cardCommentTitle{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .CommentTitleWrapper{
+        display: flex;
+        align-items: center;
+    }
+    .CommentTitleWrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .comment{
+        padding: 1rem 2rem;
+    }
+    .commentDesc{
+        padding: 1rem 0.5rem;
+    }
+    .bi-reply::before{
+        transform: translateY(-5px);
+    }
+    .iconsMiddleLine{
+        border-left: 2px solid #c3c1c1;
+    }
+    .FeedbackLi i {
+        color: #c3c1c1;
+        cursor: pointer;
+    }
+    .opinionContaienr{
+        padding: 1.4rem .8rem;
+    }
+    .opinionTitle{
+        padding: 1.5rem 0;
+    }
+    .opinionTitle p{
+        font-size: 1.2rem;
+    }
+    .cardWrapper{
+        padding: 1rem 0;
+    }
+    .PostPageCard{
+        border: none;
+        box-shadow: 0px 0px 20px #00000029;
+    }
+    .sliderHeader{
+        border-bottom: 2px solid #6c0dd8;
+    }
+    .sliderHeaderBox{
+        font-size:1.1rem ;
+    }
+    .showPosts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 25px;
+        padding:2rem 0 ;
+    }
+    .showPostsLi{
+        width: 100%;
+        height: 100%;
+        padding: .4rem;
+        border: none;
+        box-shadow: 0px 0px 20px #00000029;
+        cursor: pointer;
+    }
+    .showPostsLi:hover{
+        background-color: #dcdcdc
+    }
+    .PostsLiBox{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .postsLiTime{
+        display: flex;
+        align-items: center ;
+        padding: .6rem .2rem;
+    }
+    .postsLiTime img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .itemPostsLi img{
+        width: 30px;
+        height: 30px;
+    }
+    .postsLiTime p{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        color: #212529;
+        transform: translateY(3px);
+    }
+    .postCardTitleWrapper{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .postCardTitleWrapper h3{
+        transform: translateY(3px);
+    }
+    .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){
+        text-align: right !important;
+    }
+    .clockSize{
+        width: 20px;
+        height: 20px;
+    }
+    .commentTime{
+        padding: 0 1rem;
+    }
+    @media only screen and (min-width: 640px) {
     .swiper-button-next , .swiper-button-prev {
         display: none !important;
     }
@@ -1039,8 +1243,24 @@ p{
     }   
 }
 @media only screen and (max-width: 765px) {
+    .postCard{
+        padding: 1rem 2rem;
+      }
+   .commentTime{
+    padding: 0;
+   }
     .navbar{
         height: 210px;
+    }
+    .cardCommentTitle{
+        flex-direction: column;
+        align-items: unset !important;
+        gap: 10px;
+    }
+    .postCardTitle2{
+        flex-direction: column;
+        align-items: unset !important;
+        gap: 10px;
     }
     .inputWrapperNavbar{
         width: 100%;
@@ -1118,8 +1338,28 @@ p{
     .footer-link{
         transform: none;
     }
+    .showPosts{
+        grid-template-columns: 1fr;
+        padding: 1rem .5rem;
+    }
+    .comment{
+        padding: 1rem;
+    }
+    .postCardFeedbacktTitle{
+        direction: ltr;
+    }
+    .postCardTitle{
+        align-items: unset !important;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 1rem !important;
+        padding-bottom: 0 !important;
+    }
 }
 @media only screen and (max-width: 500px) {
+    .postCard{
+        padding: 1rem;
+      }
     .contaierAdvertise {
         display: flex;
         flex-direction: column-reverse;
@@ -1142,9 +1382,6 @@ p{
     }
     .line{
         display: none;
-    }
-    .card-body{
-        padding: .2rem;
     }
     .btnNew{
         font-size: .8rem;
@@ -1175,6 +1412,12 @@ p{
     }
     .carousel-caption h5{
         line-height: 1.6rem;
+    }
+    .FeedbackLi{
+        padding: 0 .5rem;
+    }
+    .postCardTitleWrapper h3{
+        font-size: 1.3rem;
     }
 }
 }
