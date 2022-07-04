@@ -1183,6 +1183,7 @@ p{
         display: grid;
         grid-template-columns: 2fr 1fr !important;
         place-items: center;
+        gap: 10px;
     }
     .realtedPostsSection{
         width: 100%;
@@ -1254,9 +1255,30 @@ p{
     .textAreaBox{
         padding: 1rem 0;
     }
+    .sliderPostBox{
+        padding: 2rem;
+    }
+    .heartCmFill{
+        display: none;
+        color: #6c0dd8 !important;
+    }
     @media only screen and (min-width: 640px) {
     .swiper-button-next , .swiper-button-prev {
         display: none !important;
+    }
+}
+@media only screen and (min-width: 1400px) {
+   .postSection{
+    grid-template-columns: 2.2fr .9fr !important;
+   }
+   .realtedPostsSection{
+    padding-right: 0;
+   }
+   .sliderPostBox{
+    padding: 2rem 3rem;
+    }
+    .cardLiPost img{
+        height: 460px;
     }
 }
 @media only screen and (max-width: 1400px) {

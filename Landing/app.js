@@ -9,6 +9,8 @@ let inputWrapperNavbar = document.querySelector('.inputWrapperNavbar')
 let scrollToTop = document.querySelector('.scrollToTop')
 let heart = document.querySelector('.heart')
 let heartFill = document.querySelector('.heartFill')
+let heartCm = document.querySelector('.heartCm')
+let heartCmFill = document.querySelector('.heartCmFill')
 let bookmark = document.querySelector('.bookmark')
 let bookmarkFill = document.querySelector('.bookmarkFill')
 
@@ -28,6 +30,10 @@ function HandleIconMessageActive (){
 function ShowClickHeart() {
     heart.classList.toggle("heartInAcitve");
     heartFill.style.display="block"
+}
+function ShowClickHeartCm() {
+    heartCm.classList.toggle("heartInAcitve");
+    heartCmFill.style.display="block"
 }
 function ShowClickBookmark() {
     bookmark.classList.toggle("heartInAcitve");
