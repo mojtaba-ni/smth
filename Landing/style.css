@@ -1380,13 +1380,15 @@ p{
    
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 986px) {
     .search{
         width: 95%;
     }   
     .postSection{
         grid-template-columns: 1fr !important;
         gap: 10px;
+        place-items: center;
+        padding: 0;
     }
     .realtedPostsSection{
         padding: 0;
@@ -1518,6 +1520,15 @@ p{
         justify-content: center;
 
     }
+    .postSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .postCardTitle p , .postCardTitle2 p {
+        font-size: 1rem;
+        letter-spacing: .5px;
+        color: #6d6b6b;
+      }
     .navbar{
         height: 190px;
     }
