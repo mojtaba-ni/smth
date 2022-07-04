@@ -7,6 +7,10 @@ let iconMessage = document.querySelector('.iconMessage')
 let iconMessageActive = document.querySelector('.iconMessageActive')
 let inputWrapperNavbar = document.querySelector('.inputWrapperNavbar')
 let scrollToTop = document.querySelector('.scrollToTop')
+let heart = document.querySelector('.heart')
+let heartFill = document.querySelector('.heartFill')
+let bookmark = document.querySelector('.bookmark')
+let bookmarkFill = document.querySelector('.bookmarkFill')
 
 function HandleIconActive (){
     responseLiHeart.addEventListener('click', ()=>{
@@ -19,6 +23,20 @@ function HandleIconMessageActive (){
         iconMessage.style.display = "none";
         iconMessageActive.style.display = "block";
     })
+}
+
+function ShowClickHeart() {
+    heart.classList.toggle("heartInAcitve");
+    heartFill.style.display="block"
+}
+function ShowClickBookmark() {
+    bookmark.classList.toggle("heartInAcitve");
+    bookmarkFill.style.display="block"
+}
+
+function ShowUserCmResponse() {
+    let response = document.querySelector('.userCommentResponse')
+    response.classList.toggle("userCommentResponseActive");
 }
 
 window.addEventListener('scroll' , (e)=>{
@@ -35,4 +53,3 @@ window.addEventListener('scroll' , (e)=>{
 function scrolTop () {
     window.scrollTo({top:0 , behavior: 'smooth'})
 }
-
